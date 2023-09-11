@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Amazon Project GJ</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+  </head>
+  
+  <body>
+  
+  <div class="main-header">
+		<div class="amazon-header">
+		
+		  <div class="amazon-header-left-section">
+			<div>
+			<a href="amazon.html" class="header-link">
+			  <img class="amazon-logo"
+				src="images/amazon-logo-white.png">
+			  <img class="amazon-mobile-logo"
+				src="images/amazon-mobile-logo-white.png">
+			</a>
+			</div>
+			
+			<div>
+				<img class="loc-images" src="images/icons/loc.jpg">
+			</div>
+				
+			<div>
+			
+			<a class="deliver-to header-link" >
+				<span class="deliver-text">Deliver to</span>
+				<span class="serbia-text">Serbia</span>
+			</a>
+			</div>
+			
+		  </div>
+
+		  <div class="amazon-header-middle-section">
+			<input class="search-bar" type="text" placeholder="Search">
+
+			<button class="search-button">
+			  <img class="search-icon" src="images/icons/search-icon.png">
+			</button>
+		  </div>
+
+		  <div class="amazon-header-right-section">
+		  
+		  	<a class="orders-link header-link">
+			  <span class="hello-text">Hello, sign in</span>
+			  <span class="account-text">Account & Lists</span>
+			</a>
+		  
+			<a class="orders-link header-link">
+			  <span class="returns-text">Returns</span>
+			  <span class="orders-text">& Orders</span>
+			</a>
+
+			<a class="cart-link header-link" checkout>
+			  <img class="cart-icon" src="images/icons/cart-icon.png">
+			  <div class="cart-quantity js-cart-quantity">0</div>
+			  <div class="cart-text">Cart</div>
+			</a>
+		  </div>
+		</div>
+		
+		<div class="amazon-header-bottom-section">
+			<button class="header-bottom-menu">
+			<img src="images/icons/hamburger-menu.png">
+			<span class="all-button">All</span>
+			</button>
+			<button class="header-bottom-menu">Todays Deals</button>
+			<button class="header-bottom-menu">Customer Service</button>
+			<button class="header-bottom-menu">Registry</button>
+			<button class="header-bottom-menu">Gift Cards</button>
+			<button class="header-bottom-menu">Sell</button>
+		</div>
+	</div>
+		
+
+    
+    <div class="main">
+      <div class="products-grid js-products-grid">
+<!-- we have to delete div product-container because we generate and put on the web page 
+        
+		< class="product-container">
+          div<div class="product-image-container">
+            <img class="product-image"
+              src="images/products/black-slot-toaster.jpg">
+          </div>
+
+          <div class="product-name limit-text-to-2-lines">
+            Toaster - Black
+          </div>
+
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-50.png">
+            <div class="product-rating-count link-primary">
+              2107
+            </div>
+          </div>
+
+          <div class="product-price">
+            $19.99
+          </div>
+
+
+          <div class="product-spacer"></div>
+
+
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image"
+              src="images/products/6-piece-dinner-plate-set.jpg">
+          </div>
+
+          <div class="product-name limit-text-to-2-lines">
+            6 Piece  Dinner  Set
+          </div>
+
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-37.png">
+            <div class="product-rating-count link-primary">
+              37
+            </div>
+          </div>
+
+          <div class="product-price">
+            $29.17
+          </div>
+
+          <div class="product-spacer"></div>
+
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image"
+              src="images/products/tower-set.jpg">
+          </div>
+
+          <div class="product-name limit-text-to-2-lines">
+            Towel Set - Graphite Gray
+          </div>
+
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-45.png">
+            <div class="product-rating-count link-primary">
+              144
+            </div>
+          </div>
+
+          <div class="product-price">
+            $31.99
+          </div>
+
+          <div class="product-spacer"></div>
+
+
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
+		  
+		   <span class="remove-from-cart-link link-primary js-delete-link"
+		  data-product-id="${product.id}">
+             Remove from Cart
+          </span>
+        </div>
+-->		</div>
+    </div>
+	
+	
+	<!--Order is matter-->
+		<!--CREATE CART OF PRODUCTS--> 
+	<script src="data/cart.js"></script>
+	
+	</script>
+	
+		<!--CREATE LOOP THROUGH AN ARRAY-->
+	<script src="scripts/amazon.js">
+	</script>
+		<!--Entry point-->
+  </body>
+</html>
